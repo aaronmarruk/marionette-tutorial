@@ -1,0 +1,23 @@
+{
+  "name": "tutorial",
+  "version": "0.0.0",
+  "authors": [
+    "aaronmarruk <aaronmarruk@gamil.com>"
+  ],
+  "description": "A Marionette tutorial",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.1.2",
+    "bootstrap-css": "~3.2.0",
+    "jquery-1.11.2.min": "http://code.jquery.com/jquery-1.11.2.min.js",
+    "marionette": "~2.4.1"
+  }
+}

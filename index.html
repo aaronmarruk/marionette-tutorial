@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marionette Blog Tutorial</title>
+
+        <!-- Import jquery, Backbone, Marionette, Underscore -->
+        <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="./bower_components/underscore/underscore.js"></script>
+        <script src="./bower_components/backbone/backbone.js"></script>
+        <script src="./bower_components/marionette/lib/backbone.marionette.js"></script>
+
+        <link href="./bower_components/bootstrap-css/css/bootstrap.css" rel="stylesheet">
+
+        <!-- Import our app -->
+        <script src="./app/app.js"></script>
+    </head>
+    <body>
+        <header class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Marionette Blog Tutorial</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Here we will show our main app layout -->
+        <div class="main-region">
+        </div>
+
+    </body>
+
+    <!-- Template for our main layout -->
+    <script type="text/template" id="layout-view-template">
+
+        <!-- Here we will show our form view -->
+        <div class="container form-region">
+        </div>
+
+        <!-- Here we will show our posts collection view -->
+        <div class="container posts-region">
+        </div>
+    </script>
+
+    <!-- Single post template -->
+    <script type="text/template" id="blog-post-template">
+        <li>    
+            <!-- Here we use underscore to render post model attributes -->
+            <h1><%= title %></h1>
+            <p><%= content %></p>
+            <p><small><%= date %></small></p>
+        </li>
+    </script>
+
+    <!-- Our form template -->
+    <script type="text/template" id="form-template">
+    <div class="well">
+        <form id="form">
+            <div class="form-group">
+                <label for="title">Title:</label>  
+                <input class="form-control" id="title" type="text" name="title" />
+            </div>
+            <div class="form-group">
+                <label for="content">Content:</label>  
+                <input class="form-control" type="text" id="content" name="content" />
+                <br>
+                <button class="btn submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    </script>
+</html>
